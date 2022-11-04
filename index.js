@@ -17,6 +17,10 @@ for (const file of commandFiles) {
 
 client.once(Events.ClientReady, c => {
 	console.log(`Pronto, ${c.user.tag} esta no ar!`)
+
+	c.users.send('215846215714078720', "Olá, meu lorde! Estou online.");
+
+	c.users.send('213390332174270464', "Olá, meu lorde! Estou online.");
 });
 
 client.on(Events.InteractionCreate, async interaction => {
